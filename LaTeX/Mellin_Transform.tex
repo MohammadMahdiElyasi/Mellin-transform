@@ -8,7 +8,23 @@
 \usepackage{xcolor}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{listings}
 
+% Define Python style
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize, % Monospaced font and smaller size
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    frame=single, % Adds a frame around the code
+    numbers=left, % Line numbers
+    numberstyle=\tiny\color{gray}, % Style for line numbers
+    breaklines=true, % Automatic line breaking
+    breakatwhitespace=true, % Allow breaks only at whitespaces
+    showstringspaces=false, % Don't show spaces in strings
+    tabsize=4, % Tab width
+}
 
 
 
@@ -81,7 +97,7 @@ To verify this result, we used Python to compute the Mellin Transform numericall
 
 \subsection{Python Implementation}
 The following Python code was used to compute the numerical Mellin Transform of $f(x) = e^{-x}$:
-\begin{verbatim}
+\begin{lstlisting}[style=pythonstyle]
 import numpy as np
 import scipy.integrate as integrate
 from scipy.special import gamma
@@ -112,7 +128,7 @@ plt.title('Mellin Transform of $f(x) = e^{-x}$')
 plt.legend()
 plt.grid(True)
 plt.show()
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Results and Comparison}
 The results of the numerical computation were plotted alongside the analytical Gamma function, as shown below:
@@ -144,7 +160,7 @@ This relationship demonstrates the interplay between the Mellin Transform and th
 
 \subsection{Python Implementation}
 The following Python code was used to compute the Mellin Transform numerically, evaluate the Gamma product, and compare the results with the analytical solution:
-\begin{verbatim}
+\begin{lstlisting}[style=pythonstyle]
 import numpy as np
 from scipy.special import gamma
 import matplotlib.pyplot as plt
@@ -177,7 +193,7 @@ plt.title('Verification of Mellin Transform for $f(x) = \frac{1}{x+1}$')
 plt.legend()
 plt.grid(True)
 plt.show()
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Results and Visualization}
 The results from the numerical computation, Gamma product, and analytical solution were plotted and compared. The plot below illustrates how closely these values align:
@@ -212,7 +228,7 @@ This property describes how multiplying the function by a power of $x$ shifts th
 
 \subsection{Python Implementation}
 The following Python code demonstrates the verification of both properties numerically:
-\begin{verbatim}
+\begin{lstlisting}[style=pythonstyle]
 import numpy as np
 from scipy.integrate import quad
 from scipy.special import gamma
@@ -268,7 +284,7 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Results and Visualization}
 The results of the numerical verification for both properties are shown below:
@@ -296,7 +312,7 @@ The function $\phi(r, \theta)$ is computed using a convolutional approach, which
 
 \subsection{Python Implementation}
 The following Python code demonstrates the computation of $\phi(r, \theta)$:
-\begin{verbatim}
+\begin{lstlisting}[style=pythonstyle]
 import numpy as np
 from scipy.integrate import quad
 import matplotlib.pyplot as plt
@@ -339,7 +355,7 @@ plt.title('$\phi(r, \theta)$ for $\theta \in [-\pi/4, \pi/4]$ and $r \in [0.1, 5
 plt.xlabel('r')
 plt.ylabel('$\theta$')
 plt.show()
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Results and Visualization}
 The contour plot of $\phi(r, \theta)$ is shown below:
