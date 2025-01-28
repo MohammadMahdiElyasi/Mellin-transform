@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Mathematical Background}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Property Proof}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Examples}{6}{0}{2}
+\beamer@sectionintoc {3}{Gamma and Mellin Transform Relations}{7}{0}{3}
+\beamer@sectionintoc {4}{Case Study Result}{8}{0}{4}
+\beamer@subsectionintoc {4}{1}{Plot}{9}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{10}{0}{5}
+\beamer@sectionintoc {6}{References}{11}{0}{6}
